@@ -8,6 +8,9 @@ export const MAXIMUM_LUNAR_YEAR = 2100;
 export const MAXIMUM_LUNAR_MONTH = 12;
 export const MAXIMUM_LUNAR_DAY = 1;
 
+// 1900-2100 Hex
+// The high 12 digits of hexadecimal represent the number of days in each month of the lunar calendar,
+// and the low 4 digits represent leap month information.
 export const LUNAR_DATA = [
     0x0_4b_d8, // 1900
     0x0_4a_e0, // 1901
