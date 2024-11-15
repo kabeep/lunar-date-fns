@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "A JavaScript lunar date utility library",
     "main": "./dist/index.cjs",
-    "module": "./dist/index.js",
+    "module": "./dist/index.mjs",
     "types": "./dist/index.d.ts",
     "exports": {
         "node": {
