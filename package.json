@@ -1,7 +1,7 @@
 {
     "name": "@kabeep/lunar-date-fns",
     "description": "A JavaScript lunar date utility library",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "main": "./dist/index.cjs",
     "module": "./dist/index.mjs",
     "types": "./dist/index.d.ts",
