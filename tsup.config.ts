@@ -32,8 +32,6 @@ export default defineConfig((opts) => ({
         }
     },
     async onSuccess() {
-        if (opts.watch) return;
-
         const magenta = palette(35);
         const label = magenta('HOOK');
         const log = print(label);
@@ -42,7 +40,9 @@ export default defineConfig((opts) => ({
         const srcMjsFilePath = 'dist/index.mjs';
         const destJsFilePath = 'dist/index.js';
         copy(resolve(srcMjsFilePath), resolve(destJsFilePath));
-        log(`cp ${srcMjsFilePath} to ${magenta(destJsFilePath)}`);
+        log(`cp ${magenta(srcMjsFilePath)} to ${magenta(destJsFilePath)}`);
+
+        if (opts.watch) return;
 
         // The `tsup` will emit separate d.ts and d.mts declarations starting from version 8.0.1,
         // but this package does not need it currently. It will only increase the package size.
@@ -64,7 +64,7 @@ function sleep(interval: number) {
     });
 }
 
-// exists sync for file or directory
+/** Exists sync for file or directory */
 function access(path: string) {
     try {
         accessSync(path, fsMode.F_OK);
@@ -74,7 +74,7 @@ function access(path: string) {
     }
 }
 
-// wait for file
+/** Wait for file */
 async function wait(path: string, timeout = 5000, interval = 1000) {
     let poll = Math.floor(timeout / interval);
     if (poll <= 0) return false;

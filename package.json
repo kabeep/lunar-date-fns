@@ -33,7 +33,7 @@
         "test:watch": "vitest watch",
         "coverage": "vitest run --coverage",
         "build": "tsup",
-        "build:watch": "tsup --watch",
+        "watch": "tsup --watch",
         "stats": "yarn build && cloc src && size-limit dist/index.js",
         "docs": "typedoc --plugin typedoc-plugin-missing-exports src/index.ts"
     },
