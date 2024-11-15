@@ -1,0 +1,74 @@
+{
+    "name": "@kabeep/lunar-date-fns",
+    "version": "0.1.0",
+    "description": "JavaScript lunar date utility library",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        "node": {
+            "require": {
+                "types": "./dist/index.d.ts",
+                "default": "./dist/index.cjs"
+            },
+            "import": {
+                "types": "./dist/index.d.mts",
+                "default": "./dist/index.mjs"
+            }
+        },
+        "default": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "prepare": "husky",
+        "lint": "xo src/**/*.ts --fix",
+        "pretest": "npm run lint",
+        "test": "vitest run",
+        "test:ui": "vitest --ui",
+        "test:watch": "vitest watch",
+        "stats": "cloc src && size-limit dist/index.js",
+        "coverage": "vitest run --coverage",
+        "build": "tsup",
+        "build:watch": "tsup --watch",
+        "docs": "typedoc --plugin typedoc-plugin-missing-exports src/index.ts"
+    },
+    "author": "Zhang Zixin (kabeep)",
+    "homepage": "https://github.com/kabeep/lunar-date-fns#readme",
+    "repository": "git@github.com:kabeep/lunar-date-fns.git",
+    "bugs": "https://github.com/kabeep/lunar-date-fns/issue",
+    "devDependencies": {
+        "@size-limit/esbuild": "^11.1.6",
+        "@size-limit/file": "^11.1.6",
+        "@size-limit/time": "^11.1.6",
+        "@types/node": "^22.9.0",
+        "@vitest/coverage-istanbul": "^2.1.4",
+        "@vitest/ui": "^2.1.5",
+        "cloc": "^2.2.0-cloc",
+        "husky": "^9.1.6",
+        "size-limit": "^11.1.6",
+        "ts-node": "^10.9.2",
+        "tsup": "^8.3.5",
+        "typedoc": "^0.26.11",
+        "typedoc-plugin-missing-exports": "^3.0.0",
+        "typescript": "^5.6.3",
+        "vitest": "^2.1.4",
+        "xo": "^0.58.0"
+    },
+    "keywords": [
+        "lurna",
+        "date",
+        "utility",
+        "fns",
+        "nodejs",
+        "browser"
+    ],
+    "engines": {
+        "node": ">=18"
+    },
+    "license": "MIT"
+}

@@ -1,0 +1,11 @@
+{
+    "prettier": true,
+    "semi": true,
+    "space": 4,
+    "envs": ["node", "es2021"],
+    "rules": {
+        "no-bitwise": "off",
+        "import/extensions": ["warn", "never"],
+        "@typescript-eslint/consistent-type-definitions": ["warn", "interface"]
+    }
+}
