@@ -2,7 +2,7 @@
 
 <h1>lunar-date-fns</h1>
 
-JavaScript 农历日期的实用程序库
+一个 JavaScript 农历日期的实用程序库
 
 [![NodeJS](https://img.shields.io/node/v/%40kabeep%2Flunar-date-fns?color=lightseagreen)](https://nodejs.org/docs/latest/api/)
 [![License](https://img.shields.io/github/license/kabeep/lunar-date-fns?color=slateblue)](LICENSE)
@@ -10,6 +10,8 @@ JavaScript 农历日期的实用程序库
 [![Codecov](https://img.shields.io/codecov/c/github/kabeep/lunar-date-fns?logo=codecov&color=mediumvioletred)](https://codecov.io/gh/kabeep/lunar-date-fns)
 
 [English](README.md) | 简体中文
+
+![Alt](https://repobeats.axiom.co/api/embed/a875f66209182f0a6b3ddf99ebd1bffa7b604162.svg "Repobeats analytics image")
 
 </div>
 
