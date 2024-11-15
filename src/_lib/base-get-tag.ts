@@ -38,7 +38,7 @@ type TypeTag =
  * // => '[object Number]'
  * baseGetTag(42)
  */
-function baseGetTag(value: any): TypeTag {
+function baseGetTag(value: unknown): TypeTag {
     return Object.prototype.toString.call(value) as TypeTag;
 }
 

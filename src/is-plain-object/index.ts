@@ -22,7 +22,7 @@ import baseGetTag from '../_lib/base-get-tag';
  * // => false
  * isPlainObject(new Map())
  */
-export function isPlainObject<T extends Record<string, unknown> = Record<string, unknown>>(value: any): value is T {
+export function isPlainObject<T extends Record<string, unknown> = Record<string, unknown>>(value: unknown): value is T {
     if (baseGetTag(value) !== '[object Object]') {
         return false;
     }
