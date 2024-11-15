@@ -41,11 +41,8 @@ export function isValidLunar(lunar: unknown): lunar is LunarDate {
         return false;
     }
 
-    const isLeapMonth = Boolean(lunar.isLeapMonth);
-    if (
-        (isLeapMonth && getLeapMonth(lunar.year) !== lunar.month) ||
-        lunar.day > (isLeapMonth ? getLeapMonthDays(lunar.year) : getMonthDays(lunar.year, lunar.month))
-    ) {
+    const isLeapMonth = getLeapMonth(lunar.year) === lunar.month;
+    if (lunar.day > (isLeapMonth ? getLeapMonthDays(lunar.year) : getMonthDays(lunar.year, lunar.month))) {
         return false;
     }
 

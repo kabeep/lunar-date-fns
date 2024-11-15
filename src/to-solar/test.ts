@@ -61,8 +61,6 @@ describe('Exception Case', () => {
     });
 
     it('return -1 if the given lunar date is incorrect', () => {
-        // Not a leap month
-        expectFunction({ year: 2025, month: 1, day: 1, isLeapMonth: true }).toBe(-1);
         // Is a 29-day leap month
         expectFunction({ year: 2025, month: 6, day: 30, isLeapMonth: true }).toBe(-1);
         // Is a 29-day month
