@@ -1,4 +1,4 @@
-import { BASE_YEAR, LUNAR_DATA } from './constants';
+import { BASE_YEAR, LUNAR_DATA } from '../_lib/constants';
 
 /**
  * Return the lunar leap month in the year otherwise return 0
@@ -13,8 +13,6 @@ import { BASE_YEAR, LUNAR_DATA } from './constants';
  * // => 0
  * getLeapMonth(2024)
  */
-function getLeapMonth(year: number): number {
+export function getLeapMonth(year: number): number {
     return LUNAR_DATA[year - BASE_YEAR] & 0xf;
 }
-
-export default getLeapMonth;

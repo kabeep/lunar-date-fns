@@ -1,3 +1,7 @@
+export * from './get-leap-month';
+export * from './get-leap-month-days';
+export * from './get-month-days';
+export * from './get-year-days';
 export * from './is-date';
 export * from './is-valid-date';
 export * from './is-valid-lunar';

@@ -1,11 +1,11 @@
 import { BASE_YEAR } from '../_lib/constants';
 import getBaseDate from '../_lib/get-base-date';
-import getLeapMonth from '../_lib/get-leap-month';
-import getLeapMonthDays from '../_lib/get-leap-month-days';
-import getMonthDays from '../_lib/get-month-days';
-import getYearDays from '../_lib/get-year-days';
+import { getLeapMonth } from '../get-leap-month';
+import { getLeapMonthDays } from '../get-leap-month-days';
+import { getMonthDays } from '../get-month-days';
+import { getYearDays } from '../get-year-days';
 import { isValidLunar } from '../is-valid-lunar';
-import type { LunarDate, Optionalize } from '../types';
+import type { LunarDate } from '../types';
 
 /**
  * Converts a given lunar date to a solar (Gregorian) date. The function calculates the corresponding solar year,
@@ -21,7 +21,7 @@ import type { LunarDate, Optionalize } from '../types';
  * // => -1
  * toSolar({ year: 1900, month: 1, day: 30, isLeapMonth: false })
  */
-export function toSolar(lunar: Optionalize<LunarDate, 'isLeapMonth'>): Date | -1 {
+export function toSolar(lunar: LunarDate): Date | -1 {
     if (!isValidLunar(lunar)) return -1;
 
     let offset = 0;
@@ -41,7 +41,7 @@ export function toSolar(lunar: Optionalize<LunarDate, 'isLeapMonth'>): Date | -1
         }
     }
 
-    if (leapMonth === lunar.month) {
+    if (lunar.isLeapMonth) {
         offset += getMonthDays(lunar.year, lunar.month);
     }
 

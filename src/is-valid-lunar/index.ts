@@ -1,7 +1,7 @@
 import { BASE_MONTH, BASE_YEAR, MAXIMUM_LUNAR_DAY, MAXIMUM_LUNAR_MONTH, MAXIMUM_LUNAR_YEAR } from '../_lib/constants';
-import getLeapMonth from '../_lib/get-leap-month';
-import getLeapMonthDays from '../_lib/get-leap-month-days';
-import getMonthDays from '../_lib/get-month-days';
+import { getLeapMonth } from '../get-leap-month';
+import { getLeapMonthDays } from '../get-leap-month-days';
+import { getMonthDays } from '../get-month-days';
 import { isPlainObject } from '../is-plain-object';
 import type { LunarDate } from '../types';
 
@@ -41,8 +41,11 @@ export function isValidLunar(lunar: unknown): lunar is LunarDate {
         return false;
     }
 
-    const isLeapMonth = getLeapMonth(lunar.year) === lunar.month;
-    if (lunar.day > (isLeapMonth ? getLeapMonthDays(lunar.year) : getMonthDays(lunar.year, lunar.month))) {
+    const isLeapMonth = Boolean(lunar.isLeapMonth);
+    if (
+        (isLeapMonth && getLeapMonth(lunar.year) !== lunar.month) ||
+        lunar.day > (isLeapMonth ? getLeapMonthDays(lunar.year) : getMonthDays(lunar.year, lunar.month))
+    ) {
         return false;
     }
 
