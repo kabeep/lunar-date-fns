@@ -1,7 +1,7 @@
 {
     "name": "@kabeep/lunar-date-fns",
     "description": "A JavaScript lunar date utility library",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "main": "./dist/index.cjs",
     "module": "./dist/index.mjs",
     "types": "./dist/index.d.ts",
@@ -32,10 +32,11 @@
         "test:ui": "vitest --ui",
         "test:watch": "vitest watch",
         "coverage": "vitest run --coverage",
-        "build": "tsup",
+        "clean": "rimraf dist",
+        "build": "yarn clean && tsup",
         "watch": "tsup --watch",
         "stats": "yarn build && cloc src && size-limit dist/index.js",
-        "docs": "typedoc --plugin typedoc-plugin-missing-exports src/index.ts"
+        "docs": "npm run build && typedoc --plugin typedoc-plugin-missing-exports src/index.ts"
     },
     "author": "Zhang Zixin (kabeep)",
     "homepage": "https://github.com/kabeep/lunar-date-fns#readme",
@@ -50,6 +51,7 @@
         "@vitest/ui": "^2.1.5",
         "cloc": "^2.2.0-cloc",
         "husky": "^9.1.6",
+        "rimraf": "^5.0.10",
         "size-limit": "^11.1.6",
         "ts-node": "^10.9.2",
         "tsup": "^8.3.5",
@@ -65,10 +67,14 @@
         "utility",
         "fns",
         "nodejs",
-        "browser"
+        "browser",
+        "农历",
+        "阴历",
+        "公历"
     ],
     "engines": {
         "node": ">=18"
     },
-    "license": "MIT"
+    "license": "MIT",
+    "dependencies": {}
 }
