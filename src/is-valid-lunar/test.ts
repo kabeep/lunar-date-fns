@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { BASE_YEAR, MAXIMUM_LUNAR_DAY, MAXIMUM_LUNAR_MONTH, MAXIMUM_LUNAR_YEAR } from '../_lib/constants';
+import { BASE_YEAR, MAXIMUM_LUNAR_DAY, MAXIMUM_LUNAR_MONTH, MAXIMUM_LUNAR_YEAR } from '../constants';
 import { isValidLunar } from './index';
 
 it('return true if the given value is a meaningful lunar date', () => {

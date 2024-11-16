@@ -1,5 +1,5 @@
-import { BASE_YEAR, MAXIMUM_YEAR } from '../_lib/constants';
 import getBaseDate from '../_lib/get-base-date';
+import { BASE_YEAR, MAXIMUM_YEAR } from '../constants';
 import { getLeapMonth } from '../get-leap-month';
 import { getLeapMonthDays } from '../get-leap-month-days';
 import { getMonthDays } from '../get-month-days';

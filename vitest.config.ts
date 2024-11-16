@@ -10,7 +10,7 @@ export default defineConfig({
         coverage: {
             provider: 'istanbul',
             include: ['src'],
-            exclude: ['src/_lib', 'src/**/types.ts', 'src/**/constants.ts', 'src/**/test.ts'],
+            exclude: ['src/_lib', 'src/constants', 'src/**/types.ts', 'src/**/test.ts'],
         },
     },
 });

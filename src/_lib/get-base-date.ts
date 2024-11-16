@@ -1,4 +1,4 @@
-import { BASE_DAY, BASE_MONTH, BASE_YEAR } from './constants';
+import { BASE_DAY, BASE_MONTH, BASE_YEAR } from '../constants';
 
 /**
  * Returns the UTC timestamp of a base date, constructed using `BASE_YEAR`, `BASE_MONTH`, and `BASE_DAY`.

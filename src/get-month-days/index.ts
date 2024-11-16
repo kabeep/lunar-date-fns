@@ -1,4 +1,4 @@
-import { BASE_YEAR, LUNAR_DATA, MAXIMUM_LUNAR_YEAR } from '../_lib/constants';
+import { BASE_YEAR, LUNAR_DATA, MAXIMUM_LUNAR_YEAR } from '../constants';
 
 /**
  * Returns the number of days in a non-leap month of lunar

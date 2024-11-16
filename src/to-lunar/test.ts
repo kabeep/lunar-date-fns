@@ -1,5 +1,5 @@
 import { type Assertion, describe, expect, it } from 'vitest';
-import { BASE_DAY, BASE_MONTH, BASE_YEAR, MAXIMUM_YEAR } from '../_lib/constants';
+import { BASE_DAY, BASE_MONTH, BASE_YEAR, MAXIMUM_YEAR } from '../constants';
 import { type LunarDate } from '../types';
 import { toLunar } from './index';
 

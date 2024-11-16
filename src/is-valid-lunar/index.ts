@@ -1,4 +1,4 @@
-import { BASE_MONTH, BASE_YEAR, MAXIMUM_LUNAR_DAY, MAXIMUM_LUNAR_MONTH, MAXIMUM_LUNAR_YEAR } from '../_lib/constants';
+import { BASE_MONTH, BASE_YEAR, MAXIMUM_LUNAR_DAY, MAXIMUM_LUNAR_MONTH, MAXIMUM_LUNAR_YEAR } from '../constants';
 import { getLeapMonth } from '../get-leap-month';
 import { getLeapMonthDays } from '../get-leap-month-days';
 import { getMonthDays } from '../get-month-days';

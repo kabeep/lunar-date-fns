@@ -1,4 +1,4 @@
-import { BASE_YEAR, LUNAR_DATA } from '../_lib/constants';
+import { BASE_YEAR, LUNAR_DATA } from '../constants';
 import { getLeapMonth } from '../get-leap-month';
 
 /**

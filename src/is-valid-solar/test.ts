@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { BASE_DAY, BASE_MONTH, BASE_YEAR, MAXIMUM_YEAR } from '../_lib/constants';
+import { BASE_DAY, BASE_MONTH, BASE_YEAR, MAXIMUM_YEAR } from '../constants';
 import { isValidSolar } from './index';
 
 it('return true if the given value is a meaningful date', () => {

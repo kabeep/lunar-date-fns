@@ -1,5 +1,5 @@
-import { MAXIMUM_YEAR } from '../_lib/constants';
 import getBaseDate from '../_lib/get-base-date';
+import { MAXIMUM_YEAR } from '../constants';
 import { isValidDate } from '../is-valid-date';
 import { toGMTDate } from '../to-gmt-date';
 

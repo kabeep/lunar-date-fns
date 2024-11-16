@@ -6,7 +6,7 @@ import {
     MAXIMUM_LUNAR_DAY,
     MAXIMUM_LUNAR_MONTH,
     MAXIMUM_LUNAR_YEAR,
-} from '../_lib/constants';
+} from '../constants';
 import { type LunarDate } from '../types';
 import { toSolar } from './index';
 
