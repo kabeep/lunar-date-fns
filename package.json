@@ -51,7 +51,7 @@
         "@vitest/ui": "^2.1.5",
         "cloc": "^2.2.0-cloc",
         "husky": "^9.1.6",
-        "rimraf": "^5.0.10",
+        "rimraf": "^6.0.1",
         "size-limit": "^11.1.6",
         "ts-node": "^10.9.2",
         "tsup": "^8.3.5",
