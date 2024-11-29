@@ -36,7 +36,7 @@
         "build": "yarn clean && tsup",
         "watch": "tsup --watch",
         "stats": "yarn build && cloc src && size-limit dist/index.js",
-        "docs": "npm run build && typedoc --plugin typedoc-plugin-missing-exports src/index.ts"
+        "docs": "npm run build && typedoc"
     },
     "author": "Zhang Zixin (kabeep)",
     "homepage": "https://github.com/kabeep/lunar-date-fns#readme",
@@ -56,7 +56,14 @@
         "ts-node": "^10.9.2",
         "tsup": "^8.3.5",
         "typedoc": "^0.26.11",
-        "typedoc-plugin-missing-exports": "^3.0.0",
+        "typedoc-material-theme": "^1.2.0",
+        "typedoc-plugin-include-example": "^2.0.1",
+        "typedoc-plugin-inline-sources": "^1.1.0",
+        "typedoc-plugin-mdn-links": "^4.0.2",
+        "typedoc-plugin-missing-exports": "^3.1.0",
+        "typedoc-plugin-rename-documents": "^1.0.0",
+        "typedoc-plugin-replace-text": "^4.0.0",
+        "typedoc-plugin-version-header": "^1.0.0",
         "typescript": "^5.6.3",
         "vitest": "^2.1.4",
         "xo": "^0.58.0"
