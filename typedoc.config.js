@@ -16,12 +16,8 @@ module.exports = {
         'typedoc-plugin-inline-sources',
         'typedoc-plugin-replace-text',
         'typedoc-plugin-rename-documents',
-        'typedoc-plugin-version-header',
     ],
     themeColor: '#a2cf6e',
-    renameDocuments: {
-        './README.zh-CN.md': '简体中文',
-    },
     replaceText: {
         inCodeCommentText: false,
         inCodeCommentTags: false,
@@ -40,5 +36,8 @@ module.exports = {
                 },
             },
         ],
+    },
+    renameDocuments: {
+        './README.zh-CN.md': '简体中文',
     },
 };
