@@ -55,7 +55,7 @@
         "size-limit": "^11.1.6",
         "ts-node": "^10.9.2",
         "tsup": "^8.3.5",
-        "typedoc": "^0.26.11",
+        "typedoc": "^0.27.4",
         "typedoc-material-theme": "^1.2.0",
         "typedoc-plugin-include-example": "^2.0.1",
         "typedoc-plugin-inline-sources": "^1.1.0",
