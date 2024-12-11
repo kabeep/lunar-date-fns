@@ -17,7 +17,7 @@ module.exports = {
         'typedoc-plugin-replace-text',
         'typedoc-plugin-rename-documents',
     ],
-    themeColor: '#a2cf6e',
+    themeColor: '#cb9820',
     replaceText: {
         inCodeCommentText: false,
         inCodeCommentTags: false,
