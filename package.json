@@ -48,7 +48,7 @@
         "@size-limit/time": "^11.1.6",
         "@types/node": "^22.9.0",
         "@vitest/coverage-istanbul": "^2.1.4",
-        "@vitest/ui": "^2.1.5",
+        "@vitest/ui": "^3.0.4",
         "cloc": "^2.2.0-cloc",
         "husky": "^9.1.6",
         "rimraf": "^5.0.10",
